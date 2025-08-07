@@ -10,9 +10,30 @@
     --hover-color: #45b5d1
     --checkbox-color: #6fecff
 }
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    flex: 1; /* This pushes the footer down */
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+}
+
+
 body{
     font-family: "Rubik", sans-serif;
-    display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -242,6 +263,13 @@ body{
     justify-content: space-between;
     gap: 20px;
     width: 100%;
+}
+
+footer{
+    text-align: center;
+    padding: 2rem;
+    color: white;
+    font-size: 0.9rem;
 }
 
 @media(max-width: 600px){
